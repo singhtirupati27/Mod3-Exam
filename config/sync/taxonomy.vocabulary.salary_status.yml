@@ -1,0 +1,8 @@
+uuid: f9ccb1ac-d621-4320-8695-e6027584efa9
+langcode: en
+status: true
+dependencies: {  }
+name: 'Salary Status'
+vid: salary_status
+description: ''
+weight: 0

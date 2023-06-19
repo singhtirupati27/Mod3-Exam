@@ -1,0 +1,36 @@
+uuid: cfbf7c11-a59d-40e6-802d-343dd3275d5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.designation
+  module:
+    - contextual
+    - file
+    - system
+    - taxonomy
+    - toolbar
+    - webform
+id: hr
+label: HR
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access own webform configuration'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'access webform help'
+  - 'access webform overview'
+  - 'access webform submission user'
+  - 'administer permissions'
+  - 'administer users'
+  - 'create terms in designation'
+  - 'create webform'
+  - 'edit own webform'
+  - 'edit own webform submission'
+  - 'edit terms in designation'
+  - 'view any webform submission'
+  - 'view own webform submission'
