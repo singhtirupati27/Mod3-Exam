@@ -1,0 +1,29 @@
+uuid: 73bae254-03bc-4499-bafc-c9b876d2400c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_employee_name
+    - node.type.salary_slip
+id: node.salary_slip.field_employee_name
+field_name: field_employee_name
+entity_type: node
+bundle: salary_slip
+label: 'Employee Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: field_name
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: false
+field_type: entity_reference

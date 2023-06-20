@@ -3,10 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.salary_slip
     - taxonomy.vocabulary.designation
   module:
     - contextual
     - file
+    - node
     - system
     - taxonomy
     - toolbar
@@ -17,6 +19,7 @@ weight: 4
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
   - 'access own webform configuration'
@@ -27,10 +30,16 @@ permissions:
   - 'access webform submission user'
   - 'administer permissions'
   - 'administer users'
+  - 'create salary_slip content'
   - 'create terms in designation'
   - 'create webform'
+  - 'delete own salary_slip content'
+  - 'edit any webform submission'
+  - 'edit own salary_slip content'
   - 'edit own webform'
   - 'edit own webform submission'
   - 'edit terms in designation'
   - 'view any webform submission'
+  - 'view own unpublished content'
   - 'view own webform submission'
+  - 'view salary_slip revisions'

@@ -14,12 +14,12 @@ description: ''
 categories: {  }
 elements: |-
   from:
-    '#type': datetime
+    '#type': date
     '#title': From
     '#required': true
     '#required_error': 'Enter leave start date'
   to:
-    '#type': datetime
+    '#type': date
     '#title': To
     '#required': true
     '#required_error': 'Enter leave end date'
@@ -43,6 +43,26 @@ elements: |-
           content_editor: 0
           administrator: 0
           hr: 0
+  leave_status:
+    '#type': webform_entity_select
+    '#title': 'Leave Status'
+    '#access_create_roles':
+      - administrator
+      - hr
+    '#access_update_roles':
+      - administrator
+      - hr
+    '#access_view_roles':
+      - administrator
+      - hr
+    '#target_type': taxonomy_term
+    '#selection_handler': 'default:taxonomy_term'
+    '#selection_settings':
+      target_bundles:
+        leave_status: leave_status
+      sort:
+        field: name
+        direction: asc
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
@@ -50,7 +70,7 @@ elements: |-
 css: ''
 javascript: ''
 settings:
-  ajax: false
+  ajax: true
   ajax_scroll_top: form
   ajax_progress_type: ''
   ajax_effect: ''
@@ -153,8 +173,8 @@ settings:
   draft_pending_multiple_message: ''
   confirmation_type: page
   confirmation_url: ''
-  confirmation_title: ''
-  confirmation_message: ''
+  confirmation_title: 'Leave Applied Successfully'
+  confirmation_message: '<p>Your leave hai been applied successfully. A confirmation message will be sent to your email address once it will approve from HR.</p>'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -230,5 +250,119 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  confirmation_email:
+    id: email
+    handler_id: confirmation_email
+    label: 'Confirmation Email'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:user:mail]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Leave applied'
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  leave_status_email:
+    id: email
+    handler_id: leave_status_email
+    label: 'Leave status email'
+    notes: ''
+    status: true
+    conditions:
+      enabled:
+        ':input[name="leave_status"]':
+          filled: true
+    weight: 0
+    settings:
+      states:
+        - updated
+      to_mail: '[webform_submission:user:mail]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Leave status'
+      body: '[webform_submission:values:leave_status:value]'
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  leave_applied_by_employee:
+    id: email
+    handler_id: leave_applied_by_employee
+    label: 'Leave Applied by Employee'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: tirupati.singh@innoraft.com
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Leave applied by [webform_submission:user]'
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
 variants: {  }

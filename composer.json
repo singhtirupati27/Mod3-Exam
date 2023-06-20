@@ -26,7 +26,9 @@
         "drupal/domain_registration": "^1.8",
         "drupal/pathauto": "^1.11",
         "drupal/smtp": "^1.2",
-        "drupal/webform": "^6.2@beta"
+        "drupal/webform": "^6.2@beta",
+        "drupal/webform_views": "^5.1",
+        "drush/drush": "^12.1"
     },
     "conflict": {
         "drupal/drupal": "*"

@@ -1,9 +1,12 @@
 uuid: 73c8b39d-bcac-4ed4-83f0-927d39917560
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - webform
 id: employee
 label: Employee
 weight: 5
 is_admin: null
-permissions: {  }
+permissions:
+  - 'view own webform submission'

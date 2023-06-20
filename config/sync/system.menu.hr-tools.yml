@@ -1,0 +1,8 @@
+uuid: 2a38ca6c-8e27-454d-946c-0375e9c122b7
+langcode: en
+status: true
+dependencies: {  }
+id: hr-tools
+label: 'HR Tools'
+description: ''
+locked: false

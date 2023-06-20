@@ -1,0 +1,23 @@
+uuid: 766ebf1b-12d3-4608-99a6-93210be41c3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hra
+    - node.type.salary_slip
+id: node.salary_slip.field_hra
+field_name: field_hra
+entity_type: node
+bundle: salary_slip
+label: HRA
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

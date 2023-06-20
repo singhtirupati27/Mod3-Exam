@@ -1,23 +1,23 @@
-uuid: d4864ccd-c3d5-4f37-9501-95720cb552a0
+uuid: 3dc7bd95-ee24-4540-833a-2bef869d2e02
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.employee-menu
+    - system.menu.hr-tools
   module:
     - system
     - user
   theme:
     - bootstrap5
-id: employeemenu
+id: hrtools
 theme: bootstrap5
 region: sidebar_first
 weight: 0
 provider: null
-plugin: 'system_menu_block:employee-menu'
+plugin: 'system_menu_block:hr-tools'
 settings:
-  id: 'system_menu_block:employee-menu'
-  label: 'Employee menu'
+  id: 'system_menu_block:hr-tools'
+  label: 'HR Tools'
   label_display: '0'
   provider: system
   level: 1
@@ -30,6 +30,5 @@ visibility:
     context_mapping:
       user: '@user.current_user_context:current_user'
     roles:
-      authenticated: authenticated
+      administrator: administrator
       hr: hr
-      employee: employee

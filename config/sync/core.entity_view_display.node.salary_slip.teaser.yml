@@ -1,0 +1,48 @@
+uuid: baad04c2-a1e9-4f25-b7cf-2a639cdf4134
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.salary_slip.field_basic_salary
+    - field.field.node.salary_slip.field_employee_name
+    - field.field.node.salary_slip.field_hra
+    - field.field.node.salary_slip.field_salary_month
+    - field.field.node.salary_slip.field_salary_status
+    - field.field.node.salary_slip.field_special_allowances
+    - node.type.salary_slip
+  module:
+    - datetime
+    - user
+id: node.salary_slip.teaser
+targetEntityType: node
+bundle: salary_slip
+mode: teaser
+content:
+  field_employee_name:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_salary_month:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_basic_salary: true
+  field_hra: true
+  field_salary_status: true
+  field_special_allowances: true

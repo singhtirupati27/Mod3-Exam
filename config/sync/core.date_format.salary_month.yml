@@ -1,0 +1,8 @@
+uuid: 83ff77af-bc37-4b28-af7f-cc290dd90f7d
+langcode: en
+status: true
+dependencies: {  }
+id: salary_month
+label: 'Salary Month'
+locked: false
+pattern: 'M, Y'
