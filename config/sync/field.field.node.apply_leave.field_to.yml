@@ -1,0 +1,21 @@
+uuid: 97d2561d-ce16-4174-b6cb-415fef749243
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_to
+    - node.type.apply_leave
+  module:
+    - datetime
+id: node.apply_leave.field_to
+field_name: field_to
+entity_type: node
+bundle: apply_leave
+label: To
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

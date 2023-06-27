@@ -46,6 +46,7 @@ elements: |-
   leave_status:
     '#type': webform_entity_select
     '#title': 'Leave Status'
+    '#default_value': '9'
     '#access_create_roles':
       - administrator
       - hr

@@ -1,0 +1,17 @@
+uuid: 2579acaa-f5d1-4cf4-90fb-e86dfacab42a
+langcode: en
+status: true
+dependencies: {  }
+id: leave_applied
+workflow: editorial
+transitions:
+  publish: publish
+roles: {  }
+author: true
+site_mail: false
+emails: ''
+subject: 'Leave Applied'
+body:
+  value: '<p>Your leave has been submitted.</p>'
+  format: basic_html
+label: 'Leave Applied'

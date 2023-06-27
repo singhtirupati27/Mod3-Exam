@@ -1,0 +1,21 @@
+uuid: 26fcecde-c218-4fc0-a06b-05897c8f4028
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_from
+    - node.type.apply_leave
+  module:
+    - datetime
+id: node.apply_leave.field_from
+field_name: field_from
+entity_type: node
+bundle: apply_leave
+label: From
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

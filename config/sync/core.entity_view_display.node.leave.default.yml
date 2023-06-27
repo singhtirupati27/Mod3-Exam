@@ -1,0 +1,30 @@
+uuid: 1302b86d-fe87-4860-a048-5344036d4331
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.leave.field_leave_form
+    - node.type.leave
+  module:
+    - user
+    - webform
+id: node.leave.default
+targetEntityType: node
+bundle: leave
+mode: default
+content:
+  field_leave_form:
+    type: webform_entity_reference_entity_view
+    label: above
+    settings:
+      source_entity: true
+      lazy: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

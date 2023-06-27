@@ -1,0 +1,24 @@
+uuid: bbb3ef79-76d5-4f04-acae-1dde1a507008
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflows.workflow.editorial
+id: leave_applied
+label: 'Leave Applied'
+format: plain_text
+subject: 'Your leave has been submitted.'
+recipient_types:
+  author:
+    id: author
+    provider: workbench_email
+    status: true
+    settings: {  }
+bundles: {  }
+body:
+  value: 'Your applied has been submitted. Wait for HR approval.'
+  format: plain_text
+replyTo: ''
+transitions:
+  editorial:
+    publish: publish

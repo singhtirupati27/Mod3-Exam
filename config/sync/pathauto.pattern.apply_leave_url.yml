@@ -1,0 +1,22 @@
+uuid: 4cfdcde8-f5ff-49bf-bb02-808050bb6974
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: apply_leave_url
+label: 'Apply Leave URL'
+type: 'canonical_entities:node'
+pattern: '/leave/[node:author]/[node:title]'
+selection_criteria:
+  30bb33fb-5dfd-461d-9b89-e8308b35c319:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 30bb33fb-5dfd-461d-9b89-e8308b35c319
+    context_mapping:
+      node: node
+    bundles:
+      apply_leave: apply_leave
+selection_logic: and
+weight: -5
+relationships: {  }

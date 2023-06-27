@@ -1,0 +1,17 @@
+uuid: da7ef7dd-9c53-4896-b663-94426e55924b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Apply Leave'
+type: apply_leave
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,33 @@
+uuid: 144ebec3-1c9d-4464-8255-336a96d240b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_leave_status
+    - node.type.apply_leave
+    - taxonomy.vocabulary.leave_status
+  content:
+    - 'taxonomy_term:leave_status:5eb9b14c-96de-45b4-ae70-dcb4409909ec'
+id: node.apply_leave.field_leave_status
+field_name: field_leave_status
+entity_type: node
+bundle: apply_leave
+label: 'Leave Status'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 5eb9b14c-96de-45b4-ae70-dcb4409909ec
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      leave_status: leave_status
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

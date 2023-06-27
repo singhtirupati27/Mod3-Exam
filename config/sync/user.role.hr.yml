@@ -3,10 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.apply_leave
     - node.type.salary_slip
     - taxonomy.vocabulary.designation
   module:
     - contextual
+    - field_permissions
     - file
     - node
     - system
@@ -30,16 +32,31 @@ permissions:
   - 'access webform submission user'
   - 'administer permissions'
   - 'administer users'
+  - 'create apply_leave content'
+  - 'create field_leave_status'
   - 'create salary_slip content'
   - 'create terms in designation'
   - 'create webform'
   - 'delete own salary_slip content'
+  - 'edit any apply_leave content'
   - 'edit any webform submission'
+  - 'edit field_leave_status'
+  - 'edit own field_leave_status'
   - 'edit own salary_slip content'
   - 'edit own webform'
   - 'edit own webform submission'
   - 'edit terms in designation'
   - 'view any webform submission'
+  - 'view field_from'
+  - 'view field_leave_status'
+  - 'view field_notify_to'
+  - 'view field_reason'
+  - 'view field_to'
+  - 'view own field_from'
+  - 'view own field_leave_status'
+  - 'view own field_notify_to'
+  - 'view own field_reason'
+  - 'view own field_to'
   - 'view own unpublished content'
   - 'view own webform submission'
   - 'view salary_slip revisions'

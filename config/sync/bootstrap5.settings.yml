@@ -15,11 +15,11 @@ features:
   favicon: 1
 logo:
   use_default: 0
-  path: 'public://inno-logo.jpeg'
+  path: 'public://emp_1.png'
 favicon:
   use_default: 0
-  path: 'public://inno-logo_0.jpeg'
-  mimetype: image/jpeg
+  path: 'public://emp_2.png'
+  mimetype: image/png
 subtheme_folder: themes/custom
 subtheme_name: 'B5 subtheme'
 subtheme_machine_name: b5subtheme

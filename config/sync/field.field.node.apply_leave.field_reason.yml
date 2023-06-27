@@ -1,0 +1,21 @@
+uuid: adb008b1-8291-4ce9-8f7d-3b1d27228315
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reason
+    - node.type.apply_leave
+  module:
+    - text
+id: node.apply_leave.field_reason
+field_name: field_reason
+entity_type: node
+bundle: apply_leave
+label: Reason
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,30 @@
+uuid: 7235a4f6-adba-4b57-89ac-2ad137bc77e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.apply_leave.field_from
+    - field.field.node.apply_leave.field_leave_status
+    - field.field.node.apply_leave.field_notify_to
+    - field.field.node.apply_leave.field_reason
+    - field.field.node.apply_leave.field_to
+    - node.type.apply_leave
+  module:
+    - user
+id: node.apply_leave.teaser
+targetEntityType: node
+bundle: apply_leave
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_from: true
+  field_leave_status: true
+  field_notify_to: true
+  field_reason: true
+  field_to: true
