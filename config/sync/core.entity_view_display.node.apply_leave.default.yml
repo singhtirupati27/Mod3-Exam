@@ -1,0 +1,67 @@
+uuid: e8b567cc-1d12-409f-ab3b-cb1982863eda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.apply_leave.field_from
+    - field.field.node.apply_leave.field_leave_status
+    - field.field.node.apply_leave.field_notify_to
+    - field.field.node.apply_leave.field_reason
+    - field.field.node.apply_leave.field_to
+    - node.type.apply_leave
+  module:
+    - datetime
+    - text
+    - user
+id: node.apply_leave.default
+targetEntityType: node
+bundle: apply_leave
+mode: default
+content:
+  field_from:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_leave_status:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_notify_to:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_reason:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_to:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

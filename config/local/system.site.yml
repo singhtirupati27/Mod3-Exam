@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 7c471f2e-e453-4419-b61f-ad2f7915718f
+name: 'Employee Management Portal'
+mail: tirupati.singh@innoraft.com
+slogan: ''
+page:
+  403: /node/3
+  404: /node/2
+  front: /node/17
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

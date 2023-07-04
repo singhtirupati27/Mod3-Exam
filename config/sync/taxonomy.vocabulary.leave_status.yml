@@ -1,0 +1,8 @@
+uuid: 79f6b235-a821-4ff0-9f1f-6910c531f308
+langcode: en
+status: true
+dependencies: {  }
+name: 'Leave status'
+vid: leave_status
+description: ''
+weight: 0

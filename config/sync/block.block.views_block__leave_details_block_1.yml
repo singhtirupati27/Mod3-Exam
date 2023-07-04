@@ -1,0 +1,30 @@
+uuid: 66653da3-59eb-4559-a1cc-5e2ab66a5d6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.leave_details
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap5
+id: views_block__leave_details_block_1
+theme: bootstrap5
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'views_block:leave_details-block_1'
+settings:
+  id: 'views_block:leave_details-block_1'
+  label: 'Recent Leave'
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: 'Recent Leave'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/employee/*\r\n/user/2"

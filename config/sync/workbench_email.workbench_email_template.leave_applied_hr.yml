@@ -1,0 +1,27 @@
+uuid: e29116fc-7860-4e97-9feb-ec93dba73114
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hr
+    - workflows.workflow.editorial
+id: leave_applied_hr
+label: 'Leave Applied HR'
+format: plain_text
+subject: 'Leave applied by [node:author:account-name]'
+recipient_types:
+  role:
+    id: role
+    provider: workbench_email
+    status: true
+    settings:
+      roles:
+        hr: hr
+bundles: {  }
+body:
+  value: 'Leave has been applied approve the leave.'
+  format: plain_text
+replyTo: ''
+transitions:
+  editorial:
+    publish: publish

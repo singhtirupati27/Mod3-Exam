@@ -1,0 +1,17 @@
+uuid: c109bdc5-c831-44d7-a7b3-3564fe127c99
+langcode: en
+status: true
+dependencies: {  }
+id: leave_status
+workflow: editorial
+transitions:
+  publish: publish
+roles: {  }
+author: true
+site_mail: false
+emails: ''
+subject: 'Leave status'
+body:
+  value: '<p>Your leave has been [node:field_leave_status]</p>'
+  format: basic_html
+label: 'Leave Status'

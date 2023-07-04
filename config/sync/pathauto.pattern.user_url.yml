@@ -1,0 +1,14 @@
+uuid: 765f255a-92e1-445a-87b0-9090fa2a8519
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user_url
+label: 'User URL'
+type: 'canonical_entities:user'
+pattern: '/employee/[user:display-name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

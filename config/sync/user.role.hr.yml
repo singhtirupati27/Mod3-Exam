@@ -1,0 +1,62 @@
+uuid: cfbf7c11-a59d-40e6-802d-343dd3275d5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apply_leave
+    - node.type.salary_slip
+    - taxonomy.vocabulary.designation
+  module:
+    - contextual
+    - field_permissions
+    - file
+    - node
+    - system
+    - taxonomy
+    - toolbar
+    - webform
+id: hr
+label: HR
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access own webform configuration'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'access webform help'
+  - 'access webform overview'
+  - 'access webform submission user'
+  - 'administer permissions'
+  - 'administer users'
+  - 'create apply_leave content'
+  - 'create field_leave_status'
+  - 'create salary_slip content'
+  - 'create terms in designation'
+  - 'create webform'
+  - 'delete own salary_slip content'
+  - 'edit any apply_leave content'
+  - 'edit any webform submission'
+  - 'edit field_leave_status'
+  - 'edit own field_leave_status'
+  - 'edit own salary_slip content'
+  - 'edit own webform'
+  - 'edit own webform submission'
+  - 'edit terms in designation'
+  - 'view any webform submission'
+  - 'view field_from'
+  - 'view field_leave_status'
+  - 'view field_notify_to'
+  - 'view field_reason'
+  - 'view field_to'
+  - 'view own field_from'
+  - 'view own field_leave_status'
+  - 'view own field_notify_to'
+  - 'view own field_reason'
+  - 'view own field_to'
+  - 'view own unpublished content'
+  - 'view own webform submission'
+  - 'view salary_slip revisions'

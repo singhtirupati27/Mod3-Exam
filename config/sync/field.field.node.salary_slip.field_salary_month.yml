@@ -1,0 +1,21 @@
+uuid: 7dd31892-aeb6-4652-8f94-e5889f64266e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_salary_month
+    - node.type.salary_slip
+  module:
+    - datetime
+id: node.salary_slip.field_salary_month
+field_name: field_salary_month
+entity_type: node
+bundle: salary_slip
+label: 'Salary Month'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

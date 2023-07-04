@@ -1,0 +1,78 @@
+uuid: 1515241a-d95d-4014-9c26-8f4b11efe617
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.salary_slip.field_basic_salary
+    - field.field.node.salary_slip.field_employee_name
+    - field.field.node.salary_slip.field_hra
+    - field.field.node.salary_slip.field_salary_month
+    - field.field.node.salary_slip.field_salary_status
+    - field.field.node.salary_slip.field_special_allowances
+    - node.type.salary_slip
+  module:
+    - datetime
+    - user
+id: node.salary_slip.default
+targetEntityType: node
+bundle: salary_slip
+mode: default
+content:
+  field_basic_salary:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_employee_name:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_hra:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_salary_month:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: salary_month
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_salary_status:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_special_allowances:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

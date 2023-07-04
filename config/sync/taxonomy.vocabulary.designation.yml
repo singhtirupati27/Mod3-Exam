@@ -1,0 +1,8 @@
+uuid: 11875109-6dea-4bb9-bd40-9180f84e5cc6
+langcode: en
+status: true
+dependencies: {  }
+name: Designation
+vid: designation
+description: 'Group users by roles category'
+weight: 0

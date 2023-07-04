@@ -1,0 +1,41 @@
+uuid: 6a22a83c-a8c4-4763-b3ef-7a33c3b952d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.salary_details
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - bootstrap5
+id: views_block__salary_details_block_1
+theme: bootstrap5
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'views_block:salary_details-block_1'
+settings:
+  id: 'views_block:salary_details-block_1'
+  label: 'Last Salary Details'
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: 'Last Salary Details'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/employee/*\r\n/user/2"
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+      hr: hr
+      employee: employee

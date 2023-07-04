@@ -1,0 +1,18 @@
+uuid: 92a1fe37-15a9-4d1d-b08a-cf4021ddef93
+langcode: en
+status: true
+dependencies: {  }
+id: leave_applied_hr
+workflow: editorial
+transitions:
+  publish: publish
+roles:
+  hr: hr
+author: false
+site_mail: false
+emails: ''
+subject: 'Leave Applied by [node:author]'
+body:
+  value: '<p>[node:author] has applied leave.</p>'
+  format: basic_html
+label: 'Leave Applied HR'

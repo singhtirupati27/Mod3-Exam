@@ -1,0 +1,26 @@
+uuid: 73c8b39d-bcac-4ed4-83f0-927d39917560
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.apply_leave
+  module:
+    - field_permissions
+    - node
+    - webform
+id: employee
+label: Employee
+weight: 5
+is_admin: null
+permissions:
+  - 'create apply_leave content'
+  - 'create field_from'
+  - 'create field_notify_to'
+  - 'create field_reason'
+  - 'create field_to'
+  - 'view own field_from'
+  - 'view own field_leave_status'
+  - 'view own field_notify_to'
+  - 'view own field_reason'
+  - 'view own field_to'
+  - 'view own webform submission'
